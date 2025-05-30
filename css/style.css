@@ -105,3 +105,23 @@ html {
     font-size: 1.5rem; /* Ajusta o tamanho do título para telas menores */
   }
 }
+
+.input-field textarea#texto {
+  /* O TinyMCE vai substituir isso, mas é bom ter um fallback
+       ou para o estado antes da inicialização do editor. */
+  min-height: 150px; /* Altura mínima inicial antes do TinyMCE carregar */
+  visibility: hidden; /* Esconde o textarea original até o TinyMCE inicializar */
+}
+
+/* Estilização para o container do TinyMCE, se necessário */
+.tox-tinymce {
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Para combinar com o estilo Material */
+}
+
+/* Aumentar um pouco o espaçamento inferior do campo de texto
+   para acomodar melhor o editor. */
+.input-field.textarea-container {
+  /* Adicionaremos esta classe no HTML */
+  margin-bottom: 20px;
+}

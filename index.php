@@ -12,6 +12,8 @@ $currentDateTime = date('d/m/Y H:i:s');
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
 <body>
@@ -33,9 +35,8 @@ $currentDateTime = date('d/m/Y H:i:s');
                             <label for="titulo">Título da sua entrada</label>
                         </div>
 
-                        <div class="input-field">
-                            <textarea id="texto" name="texto" class="materialize-textarea" required></textarea>
-                            <label for="texto">Escreva seus pensamentos aqui...</label>
+                        <div class="input-field textarea-container">
+                            <textarea id="texto" name="texto" placeholder="Escreva seus pensamentos aqui..."></textarea>
                         </div>
 
                         <div class="center-align form-actions">
