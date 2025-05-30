@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo'); // Defina seu fuso horário
-$currentDateTime = date('d/m/Y H:i:s');
+// $currentDateTime = date('d/m/Y H:i:s'); // Não é mais usado diretamente aqui, o JS cuida disso
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -13,7 +13,7 @@ $currentDateTime = date('d/m/Y H:i:s');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
 <body>
