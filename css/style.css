@@ -1,0 +1,107 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif; /* Fonte padrão do Material Design */
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Garante que ocupe toda a altura da viewport */
+  background-color: #f0f2f5; /* Um cinza claro para o fundo */
+  padding: 15px; /* Espaçamento para telas menores */
+}
+
+.diary-wrapper {
+  width: 100%;
+  max-width: 600px; /* Largura máxima do formulário */
+}
+
+.card {
+  border-radius: 8px; /* Bordas levemente arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+}
+
+.card .card-content {
+  padding: 24px; /* Mais padding interno no card */
+}
+
+#clock-container {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 10px;
+  background-color: #ede7f6; /* Lilás bem claro, combinando com o botão */
+  border-radius: 4px;
+}
+
+#date-display {
+  display: block;
+  font-size: 1.1em;
+  color: #5e35b1; /* Roxo mais escuro para a data */
+}
+
+#time-display {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4527a0; /* Roxo mais escuro e vibrante para a hora */
+  display: block;
+}
+
+.input-field label {
+  color: #5e35b1; /* Cor do label */
+}
+
+.input-field input[type="text"]:focus + label,
+.input-field textarea:focus + label {
+  color: #512da8 !important; /* Cor do label ao focar, um pouco mais escura */
+}
+
+.input-field input[type="text"]:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #512da8 !important;
+  box-shadow: 0 1px 0 0 #512da8 !important;
+}
+
+.input-field input[type="text"].valid,
+.input-field textarea.valid {
+  border-bottom: 1px solid #4caf50; /* Verde para válido */
+  box-shadow: 0 1px 0 0 #4caf50;
+}
+
+.input-field input[type="text"].invalid,
+.input-field textarea.invalid {
+  border-bottom: 1px solid #f44336; /* Vermelho para inválido */
+  box-shadow: 0 1px 0 0 #f44336;
+}
+
+.form-actions {
+  margin-top: 25px;
+}
+
+#feedback-message {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+#feedback-message.success {
+  color: #4caf50; /* Verde */
+}
+
+#feedback-message.error {
+  color: #f44336; /* Vermelho */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .card .card-content {
+    padding: 20px;
+  }
+  #clock-container {
+    margin-bottom: 20px;
+  }
+  h5 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título para telas menores */
+  }
+}
