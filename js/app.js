@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   bullist numlist outdent indent | link image media | \
                   forecolor backcolor removeformat | charmap | code fullscreen preview | help',
         menubar: 'file edit view insert format tools table help', // Habilita uma menubar mais completa
-        height: 350, // Altura inicial do editor
+        height: 900, // Aumentado de 350 para 550. Ajuste conforme necessário.
         autoresize_bottom_margin: 50,
         placeholder: "Escreva seus pensamentos aqui...", // Placeholder para o editor
         setup: function (editor) {

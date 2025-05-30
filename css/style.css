@@ -109,7 +109,7 @@ html {
 .input-field textarea#texto {
   /* O TinyMCE vai substituir isso, mas é bom ter um fallback
        ou para o estado antes da inicialização do editor. */
-  min-height: 150px; /* Altura mínima inicial antes do TinyMCE carregar */
+  min-height: 800px; /* Altura mínima inicial antes do TinyMCE carregar */
   visibility: hidden; /* Esconde o textarea original até o TinyMCE inicializar */
 }
 
@@ -122,6 +122,6 @@ html {
 /* Aumentar um pouco o espaçamento inferior do campo de texto
    para acomodar melhor o editor. */
 .input-field.textarea-container {
-  /* Adicionaremos esta classe no HTML */
   margin-bottom: 20px;
+  height: auto;
 }
